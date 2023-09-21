@@ -1,0 +1,474 @@
+body, h1 ,h2, ul, li  {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    
+
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/* HEADER */
+
+header {
+
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    width:100%;
+    height: 70px;
+    border-bottom: 1px solid black;
+    
+
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.site-logo {
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    
+    
+}
+
+nav ul, li, a {
+
+    align-items: center;
+}
+nav ul {
+
+    display: flex;
+    list-style-type: none;
+    
+}
+
+nav li {
+
+    margin: 0 20px;
+    
+}
+
+nav a {
+
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    margin-right: 20px;
+}
+
+nav a:hover {
+
+    color: #C4B4DE;
+    text-decoration: underline;
+}
+
+nav a:active {
+    
+    color: #C4B4DE;
+    text-decoration: underline;
+
+}
+
+nav button {
+    margin-right: 40px;
+
+    
+    font-size: 14px;
+    text-transform: uppercase;
+   
+    border: none;
+    padding: 7px 10px;
+    background-color: #CBC9CC;
+    border-radius: 10px;
+    background-color: #C4B4DE;
+    color: white;
+    font-style: italic;
+}
+
+nav button:hover {
+
+    background-color: transparent;
+    transition: 0.5s;
+    color: #C4B4DE;
+    background-color: white;
+    font-size:14px;
+}
+
+@media only screen and (max-width: 950px) {
+
+    nav ul {
+        display: none;
+    }
+
+    nav .svg-logo-menu {
+
+        background-image: url(svg/burger-list-menu-navigation-svgrepo-com.svg);
+        background-size: cover;
+        
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* hero section */
+
+#section-main {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-image: url(images/main-hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container1 {
+    display: flex;   
+    justify-content: end;
+    margin-right: 50px;
+    width: 50%;
+}
+
+#main-box  {
+  display: flex;
+  align-items:flex-start;
+  flex-direction: column;
+  justify-content: end;
+  width: 600px;
+  height: 300px;
+  vertical-align: middle;
+  
+  
+  
+}
+
+#main-box h1 {
+
+    font-size: 4rem;
+    color: white;
+}
+
+.violet {
+    color: #C4B4DE;
+    text-decoration: underline;
+}
+
+#main-box p {
+
+    font-size:1.125rem;
+    color: black;
+    margin-top:40px;
+    margin-bottom: 40px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+}
+
+#main-box button {
+
+    font-size: 18px;
+    text-transform: uppercase;
+   
+    border: none;
+    padding: 15px 20px;
+    background-color: #CBC9CC;
+    border-radius: 10px;
+    background-color: #C4B4DE;
+    color: white;
+    font-style: italic;
+}
+
+#main-box button:hover {
+
+    background-color: transparent;
+    transition: 0.5s;
+    color: #C4B4DE;
+    background-color: white;
+    font-size:20px;
+}
+
+@media only screen and (max-width: 700px) {
+   
+    .container1 {
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex: 1;
+        
+    }
+
+    #main-box {
+         
+        align-items: center;
+
+    }
+    
+    #main-box h1 {
+        font-size: 2.4rem;
+    }
+
+    #main-box p {
+
+        text-align: center;
+    }
+
+   
+}
+
+
+
+
+/* second section */
+
+.title-block {
+
+    
+    width: 100%;
+    
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 3rem;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    background-color: #C4B4DE;
+    padding-bottom: 100px;
+}
+
+.card {
+    background-color: white;
+    width: 350px;
+    height: 550px;
+    margin: 20px;
+    text-align: center;
+    
+}
+
+.card-image {
+
+    
+    height: 400px;
+    margin-bottom:  15px;
+    background-size: cover;
+    
+    
+}
+
+.card-image h2 p {
+
+    text-align: center;
+}
+.card-1 {
+    background-image: url(images/box1.jpg);
+
+}
+
+.card-2 {
+    background-image: url(images/box2.jpg);
+}
+
+.card-3 {
+
+    background-image: url(images/box3.jpg);
+}
+
+@media only screen and (max-width: 700px) {
+
+    .card {
+
+        width: 340px;
+    }
+}
+/*footer */
+
+footer {
+
+    width:100%;
+    height: 600px;
+}
+
+.footer-top {
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items:flex-start;
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top:50px;
+    padding-bottom: 50px;
+   
+}
+
+.footer-top-box {
+
+    display: flex;
+    flex: 1 1;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+#footer-icon {
+
+    
+    height: 50px;
+    width: 50px;
+    margin-left:20px;
+    
+    object-fit: cover;
+}
+
+#footer-text1 {
+
+    font-size:24px;
+    padding-left:30px;
+    margin: 0px;
+    
+}
+
+
+#footer-text2 {
+
+    font-size: 60px;
+    padding-left:30px;
+    margin: 0px;
+    
+}
+
+.footer-bottom {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    
+}
+
+.footer-column {
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#footer-logo {
+
+    font-size: 2.4rem;
+}
+
+.footer-column ul  {
+   
+    list-style-type: none;
+    
+}
+
+.footer-column a {
+
+    text-decoration: none;
+    color: black;
+}
+
+.footer-column a:hover {
+
+    color:#C4B4DE ;
+    text-decoration: underline;
+
+}
+
+.footer-column li {
+
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.footer-column label[for="email"] {
+    color: black;
+    font-size: 20px; 
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.footer-column input[type=email] {
+
+    height: 40px;
+    width: 200px;
+    border: 1px solid #C4B4DE ;
+    
+}
+
+.footer-column .input-container {
+
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items:start;
+}
+
+
+@media only screen and (max-width: 700px)
+{
+    .footer-bottom {
+         
+        flex-direction: column;
+        
+        height:50vh;
+
+        
+
+    }
+
+    .footer-top {
+
+        
+        align-items: center;
+    }
+
+    #footer-text1 {
+
+        font-size: 16px;
+    }
+
+    #footer-text2 {
+
+        font-size: 40px;
+    }
+
+    #footer-icon {
+
+        height:40px;
+        width: 40px;
+    }
+
+    
+}
+
+
+
